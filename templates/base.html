@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Drug detection</title>
+
+  <link rel="stylesheet" href="{{url_for('static',filename= 'vendors/feather/feather.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename= 'vendors/ti-icons/css/themify-icons.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename= 'vendors/css/vendor.bundle.base.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename= 'vendors/datatables.net-bs4/dataTables.bootstrap4.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename= 'vendors/ti-icons/css/themify-icons.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename= 'js/select.dataTables.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename= 'css/vertical-layout-light/style.css')}}">
+</head>
+<body>
+  <div class="container-scroller">
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="#"><img src="{{url_for('static',filename='images/ico.svg')}}" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="#"></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <h4 style="padding-right: 30%;color: black; font-family: 'Times New Roman';">Visionary MedScan: Enhancing Accessibility and Safety through Drug Image Classification Models</h4>        
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="icon-menu"></span>
+          </button>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <div class="container-fluid page-body-wrapper">
+
+
+
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./home">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./image">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">Detect Image</span>
+              <i class="menu-arrow"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./analysis1">
+              <i class="icon-columns menu-icon"></i>
+              <span class="menu-title">Confusion Matrix</span>
+              <i class="menu-arrow"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./analysis2">
+              <i class="icon-bar-graph menu-icon"></i>
+              <span class="menu-title">F1 Score
+            </span>
+              <i class="menu-arrow"></i>
+            </a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./analysis3">
+              <i class="icon-grid-2 menu-icon"></i>
+              <span class="menu-title">Precision</span>
+              <i class="menu-arrow"></i>
+            </a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./analysis4">
+              <i class="icon-contract menu-icon"></i>
+              <span class="menu-title">Recall</span>
+              <i class="menu-arrow"></i>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+      
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                  <h3 class="font-weight-bold" style="font-family: 'Times New Roman'">Drug Detection and Classification</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {% block body %}
+    
+          {% endblock %} 
+
+
+        </div>
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <script src="{{url_for('static',filename= 'vendors/js/vendor.bundle.base.js')}}"></script>
+  <script src="{{url_for('static',filename= 'vendors/chart.js/Chart.min.js')}}"></script>
+  <script src="{{url_for('static',filename= 'vendors/datatables.net/jquery.dataTables.js')}}"></script>
+  <script src="{{url_for('static',filename= 'vendors/datatables.net-bs4/dataTables.bootstrap4.js')}}"></script>
+  <script src="{{url_for('static',filename= 'js/dataTables.select.min.js')}}"></script>
+  <script src="{{url_for('static',filename= 'js/off-canvas.js')}}"></script>
+  <script src="{{url_for('static',filename= 'js/hoverable-collapse.js')}}"></script>
+  <script src="{{url_for('static',filename= 'js/template.js')}}"></script>
+  <script src="{{url_for('static',filename= 'js/settings.js')}}"></script>
+  <script src="{{url_for('static',filename= 'js/todolist.js')}}"></script>
+  <script src="{{url_for('static',filename= 'js/dashboard.js')}}"></script>
+  <script src="{{url_for('static',filename= 'js/Chart.roundedBarCharts.js')}}"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

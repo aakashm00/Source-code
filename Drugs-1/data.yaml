@@ -1,0 +1,18 @@
+names:
+- Alaxan
+- Bactidol
+- Bioflu
+- Bioflu_Strip
+- Biogesic
+- DayZinc
+- Decolgen
+- Fish_Oil
+- Kremil_S
+- Medicol
+- Neozep
+- Neozep_Strip
+nc: 12
+
+test: ../test/images
+train: Drugs-1/train/images
+val: Drugs-1/valid/images
